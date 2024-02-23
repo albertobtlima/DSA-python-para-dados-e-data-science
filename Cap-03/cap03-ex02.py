@@ -30,6 +30,8 @@ elif operacao == "-":
 elif operacao == "*":
     resultado = numero1 * numero2
     print(f"A multiplicação entre {numero1} e {numero2} é: {resultado}")
-else:
+elif operacao == "/":
     resultado = numero1 / numero2
     print(f"A divisão entre {numero1} e {numero2} é: {resultado}")
+else:
+    print("Operação inválida.")
