@@ -96,7 +96,7 @@ else:
 print(int("26"))
 print(float("123.345"))
 print(str(14))
-print(len([23,34,45,46]))
+print(len([23, 34, 45, 46]))
 
 array = [1, 2, 3]
 print(max(array))
@@ -104,35 +104,3 @@ print(min(array))
 
 list1 = [16, 23, 44, 75]
 print(sum(list1))
-
-print('-' * 30)  # ----------------------------------------------------------
-# Criando Funções Usando Outras Funções
-
-import math
-
-
-def numPrimo(num):                                     # Verificando se um número é primo
-    if (num % 2) == 0 and num > 2:
-        return "Este número não é primo"
-    for i in range(3, int(math.sqrt(num)) + 1, 2):
-        if (num % i) == 0:
-            return "Este número não é primo"
-    return "Este número é primo"
-
-
-print(numPrimo(541))
-print(numPrimo(2))
-
-caixa_baixa = "Este Texto Deveria Estar Todo Em LowerCase"
-
-
-def lowercase(text):
-    return text.lower()
-
-
-lowercased_string = lowercase(caixa_baixa)
-print(lowercased_string)
-
-
-print('-' * 30)  # ----------------------------------------------------------
-# Fazendo Split dos Dados

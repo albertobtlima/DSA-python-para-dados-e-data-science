@@ -66,43 +66,31 @@ Por exemplo, o número 2 é primo, pois é divisível apenas por 1 e 2. O númer
     Imprima a lista de números primos
 """
 # Encontrando números primos entre 2 e 30 usando loop for e while
-# Variável para armazenar números primos
-primos = []
 
-# Loop for para percorrer números de 2 a 30
-for num in range(2, 31):
+primos = []                                   # Variável para armazenar números primos
 
-    # Variável de controle
-    eh_primo = True
-
-    # Loop while para verificar se o número é primo
+for num in range(2, 31):                      # Loop for para percorrer números de 2 a 30
+    eh_primo = True                           # Variável de controle
     i = 2
-    while i <= num // 2:
+
+    while i <= num // 2:                      # Loop while para verificar se o número é primo
         if num % i == 0:
             eh_primo = False
             break
         i += 1
-
-    # Adicionando o número primo na lista
-    if eh_primo:
+    if eh_primo:                              # Adicionando o número primo na lista
         primos.append(num)
 
-# Imprimindo a lista de números primos
-print(primos)
+print(primos)                                 # Imprimindo a lista de números primos
 
 print('-' * 30)  # ---------------------------------------------------------------
 # Encontrando números primos entre 2 e 30 usando loop for e while (outro exemplo)
-# Loop for para percorrer números de 2 a 30
-for i in range(2, 31):
 
-    # Variável de controle
-    j = 2
+for i in range(2, 31):          # Loop for para percorrer números de 2 a 30
+    j = 2                       # Variável de controle
+    valor = 0                   # Contador
 
-    # Contador
-    valor = 0
-
-    # Loop while para verificar se o número é primo
-    while j < i:
+    while j < i:                # Loop while para verificar se o número é primo
         if i % j == 0:
             valor = 1
             j = j + 1

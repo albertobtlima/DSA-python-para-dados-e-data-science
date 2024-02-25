@@ -1,0 +1,51 @@
+# Criando Funções Usando Outras Funções
+
+import math
+
+
+def numPrimo(num):                                     # Verificando se um número é primo
+    if (num % 2) == 0 and num > 2:
+        return "Este número não é primo"
+    for i in range(3, int(math.sqrt(num)) + 1, 2):
+        if (num % i) == 0:
+            return "Este número não é primo"
+    return "Este número é primo"
+
+
+print(numPrimo(541))
+print(numPrimo(2))
+
+caixa_baixa = "Este Texto Deveria Estar Todo Em LowerCase"
+
+
+def lowercase(text):
+    return text.lower()
+
+
+lowercased_string = lowercase(caixa_baixa)
+print(lowercased_string)
+
+
+print('-' * 30)  # ----------------------------------------------------------
+# Fazendo Split dos Dados
+
+
+def split_string_palavras(text):
+    return text.split(" ")
+
+
+texto = "Esta função será bastante útil para separar grandes volumes de dados."
+print(split_string_palavras(texto))      # Isso divide a string em uma lista de palavras
+
+token = split_string_palavras(texto)     # Podemos atribuir o output de uma função para uma variável
+print(token)
+
+
+# Fazendo split dos dados
+def split_string_letras(text):
+    texto = text.upper()
+    for letra in texto:
+        print(letra)
+
+
+split_string_letras(texto)
