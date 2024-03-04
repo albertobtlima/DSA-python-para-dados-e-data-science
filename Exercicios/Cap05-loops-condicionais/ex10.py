@@ -5,5 +5,5 @@ for letra in frase:
     if letra == "r":
         letraR += 1
 
-print(frase)
+# print(frase)
 print(f"A letra 'R' aparece {letraR} vezes na frase.")
