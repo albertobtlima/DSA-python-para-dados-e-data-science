@@ -36,3 +36,36 @@ ao elemento correspondente na listaB.
 listaA = [2, 3, 4]
 listaB = [10, 11, 12]
 '''
+
+**Exercício 6** - Considerando o range de valores abaixo, use a função filter() para retornar 
+apenas os valores negativos.
+range(-5, 5)
+
+**Exercício 7** - Usando a função filter(), encontre os valores que são comuns às duas listas abaixo.
+
+'''
+a = [1,2,3,5,7,9]
+b = [2,3,5,6,7,8]
+'''
+
+**Exercício 8** - Considere os dois dicionários abaixo. 
+Crie um terceiro dicionário com as chaves do dicionário 1 e os valores do dicionário 2.
+
+'''
+dict1 = {'a':1,'b':2}
+dict2 = {'c':4,'d':5}
+'''
+
+**Exercício 9** - Considere a lista abaixo e retorne apenas os elementos cujo índice for maior que 5.
+
+'''
+lista = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+'''
+
+**Exercício 10** - Crie um regex em Python para extrair a palavra que aparece depois das palavras 
+Data e Science na frase: 'A Data Science Academy oferce os melhores cursos de análise de dados do Brasil.'
+
+'''
+import re
+texto = 'A Data Science Academy oferece os melhores cursos de análise de dados do Brasil.'
+'''
