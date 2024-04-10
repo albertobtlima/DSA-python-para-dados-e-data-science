@@ -55,18 +55,16 @@ def game():
             letras_erradas.append(tentativa)
 
         # Condicional
-        if "-" not in letras_descobertas:
+        if "_" not in letras_descobertas:
             print("\nVocê venceu! A palavra era: ", palavra)
             break
 
     # Condicional
-    if "-" in letras_descobertas:
+    if "_" in letras_descobertas:
         print("\nVocê perdeu... A palavra era: ", palavra)
 
-'''
+
 # Bloco main
-if __name__ = "__main__":
+if __name__ == "__main__":
     game()
     print("\nParabéns")
-'''
-game()
